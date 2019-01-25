@@ -111,7 +111,7 @@ function createCard(parentElem, human) {
   divElem.appendChild(sexElem);
   divElem.appendChild(agesElem);
   divElem.appendChild(fatherElem);
-  divElem.appendChild(motherElem)
+  divElem.appendChild(motherElem);
 
   parentElem.appendChild(divElem);
 }
