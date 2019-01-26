@@ -3,6 +3,8 @@
 let colors = ['red', 'pink', 'green', 'blue', 'yellow', 'brown', 'purple'];
 let element = document.getElementsByTagName('p')[0];
 
+colorText(element);
+
 function colorText(node) {
   let text = node.innerText;
   let oldColor = '';
@@ -19,5 +21,3 @@ function colorText(node) {
 
   node.innerHTML = newText;
 }
-
-colorText(element);

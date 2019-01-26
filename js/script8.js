@@ -1,5 +1,8 @@
 'use strict';
 
+createCards();
+createTable();
+
 function getAverageAgeBtwMomAndChildren() {
   let summOfAverages = 0;
   let familyNums = 0;
@@ -126,6 +129,3 @@ function createCards() {
 
   document.body.appendChild(divElem);
 }
-
-createCards();
-createTable();

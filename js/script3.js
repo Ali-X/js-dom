@@ -1,5 +1,7 @@
 'use strict';
 
+createSpanInBlockByID('testBlock');
+
 function createSpanInBlockByID(blockID) {
   let elementById = document.getElementById(blockID);
   if (elementById != null) {
@@ -14,5 +16,3 @@ function createSpanInBlockByID(blockID) {
     console.log('No tag with id ' + blockID);
   }
 }
-
-createSpanInBlockByID('testBlock');
