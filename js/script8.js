@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 function getAverageAgeBtwMomAndChildren() {
   let summOfAverages = 0;
@@ -42,12 +42,12 @@ function getAverageAge(inputSex) {
 }
 
 function createHeader(table) {
-  let headers = ["Name", "Value"];
-  let headElem = document.createElement("tr");
-  headElem.setAttribute("class", "table-header");
+  let headers = ['Name', 'Value'];
+  let headElem = document.createElement('tr');
+  headElem.setAttribute('class', 'table-header');
 
   for (let i = 0; i < headers.length; i++) {
-    let dataElem = document.createElement("td");
+    let dataElem = document.createElement('td');
     dataElem.innerText = headers[i];
     headElem.appendChild(dataElem);
   }
@@ -56,13 +56,13 @@ function createHeader(table) {
 }
 
 function createRow(table, name, value) {
-  let rowElem = document.createElement("tr");
-  rowElem.setAttribute("class", "table-row");
-  let dataElem = document.createElement("td");
-  dataElem.setAttribute("class", "table-data-right");
+  let rowElem = document.createElement('tr');
+  rowElem.setAttribute('class', 'table-row');
+  let dataElem = document.createElement('td');
+  dataElem.setAttribute('class', 'table-data-right');
   dataElem.innerText = name;
   rowElem.appendChild(dataElem);
-  dataElem = document.createElement("td");
+  dataElem = document.createElement('td');
   dataElem.innerText = value;
   rowElem.appendChild(dataElem);
 
@@ -70,8 +70,8 @@ function createRow(table, name, value) {
 }
 
 function createTable() {
-  let tableElem = document.createElement("table");
-  tableElem.setAttribute("class", "table");
+  let tableElem = document.createElement('table');
+  tableElem.setAttribute('class', 'table');
 
   createHeader(tableElem);
   createRow(tableElem, "Average age between mother and children", getAverageAgeBtwMomAndChildren());

@@ -1,6 +1,6 @@
-"use strict";
+'use strict';
 
-let element = document.getElementsByTagName("div")[0];
+let element = document.getElementsByTagName('div')[0];
 
 function createCloneNode(block) {
   let elementCopy = block.cloneNode(true);
